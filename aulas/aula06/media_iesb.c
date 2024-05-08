@@ -28,7 +28,7 @@ int main () {
        }else if (media >= 0.1f && media < 2.9f) {
        printf("A menção é II\n");
        }else if (media == 0.0f) {
-       printf("A menção é SR, se fodeu\n");
+       printf("A menção é SR\n");
        }
     }else {
       printf("Nota 2 invalida, entre com um valor entre 0.0 e 10.0\n");
