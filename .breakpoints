@@ -7,6 +7,14 @@
         "version": 40,
         "index": 0
       }
+    ],
+    "praticas/pratica3/questao2.c": [
+      {
+        "id": "4c4df3fd-9d1c-4552-bc00-f546afb0ba23",
+        "line": 19,
+        "version": 557,
+        "index": 573
+      }
     ]
   }
 }
