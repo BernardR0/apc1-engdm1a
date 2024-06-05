@@ -1,18 +1,17 @@
 #include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-  
+#include <stdlib.h>
+
+
 int main() {
   float cor[10], resistencia_nominal, resistencia_nominal_máxima, resistencia_nominal_mínima;
   int numero_de_faixas;
   int deseja_continuar;
- 
+  int deu_certo;
   
   do 
   {
-  
-  
 
     printf("Digite o número de faixas: ");
     int deu_certo = scanf("%i", &numero_de_faixas);
@@ -117,8 +116,12 @@ int main() {
     printf("\n Aperte 1 para continuar e 2 para sair: ");
     deu_certo = scanf("%d", &deseja_continuar);
       
-
+    
     
   } while (deseja_continuar == 1);
   return 0;
+  
+		
 }
+
+
