@@ -5,14 +5,16 @@
 
 
 int main() {
+ 
   float cor[10], resistencia_nominal, resistencia_nominal_máxima, resistencia_nominal_mínima;
   int numero_de_faixas;
   int deseja_continuar;
   int deu_certo;
+
   
   do 
   {
-
+    deu_certo = system("clear");
     printf("Digite o número de faixas: ");
     int deu_certo = scanf("%i", &numero_de_faixas);
     
@@ -29,6 +31,7 @@ int main() {
 
         printf("Digite o número da cor da faixa %i: ", i);
         deu_certo = scanf("%f", &cor[i]);
+        deu_certo = system("clear");
         
         
 
@@ -36,6 +39,7 @@ int main() {
           while (cor[i] > 9 && cor[i] < 0) {
             printf("Valor inválida, digite novamente o valor da faixa %d: ", i);
             deu_certo = scanf("%f", &cor[i]);
+            deu_certo = system("clear");
             
             
           }
@@ -44,6 +48,7 @@ int main() {
           while (cor[4] != 10 && cor[4] != 5 && cor[4] != 20) {
             printf("Valor inválida, digite novamente o valor da faixa 4: ");
             deu_certo = scanf("%f", &cor[4]);
+            deu_certo = system("clear");
             
             
           }
@@ -76,6 +81,7 @@ int main() {
 
         printf("Digite o número da cor da faixa %i: ", i);
         deu_certo = scanf("%f", &cor[i]);
+        deu_certo = system("clear");
         
         
 
@@ -83,6 +89,7 @@ int main() {
           while (cor[i] > 9 && cor[i] < 0) {
             printf("Valor inválida, digite novamente o valor da faixa %d: ", i);
             deu_certo = scanf("%f", &cor[i]);
+            deu_certo = system("clear");
             
             
           }
@@ -91,6 +98,7 @@ int main() {
           while (cor[5] != 10 && cor[5] != 5 && cor[5] != 20) {
             printf("Valor inválida, digite novamente o valor da faixa 5: ");
             deu_certo = scanf("%f", &cor[5]);
+            deu_certo = system("clear");
             
             
           }

@@ -1,11 +1,27 @@
 #include <stdio.h>   
 
 int main () {
-  float nota1;
-  float nota2;
+  int numero;
+  float desconto;
 
-  printf("Informe a nota 1: ");
-  int deu_certo = scanf("%f", &nota1);
+  switch(numero) {
+    case 1: numero = 1, numero = 2;
+      desconto = 0.05;
+      
+      break;
+    case 2: numero = 3, numero = 4;
+      desconto = 0.07;
+
+     break;
+    case 3: numero = 5, numero = 6;
+      desconto = 0.10;
+
+     break;
+    
+
+
+    
+  }
 
   
 
