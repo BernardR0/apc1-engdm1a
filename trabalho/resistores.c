@@ -6,6 +6,9 @@
 
 
 int main() {
+
+    
+    
     enum unidade_e {
         preto = 0,
         marrom = 1,
@@ -32,16 +35,20 @@ int main() {
     int escolha;
     do {
 
+        int deu_certo = system("clear");
+        
         printf("Calculadora de Resistência de Resistor\n");
         printf("1. Calcular resistência de resistor\n");
         printf("2. Sair\n");
         printf("Escolha uma opção: ");
-        int deu_certo = scanf("%d", &escolha);
+        deu_certo = scanf("%d", &escolha);
+        
 
         if (deu_certo != 1) {
             printf("Entrada inválida! Tente novamente.\n");
-            while (getchar() != '\n'); // Limpa o buffer de entrada
+            while (getchar() != '\n'); 
             continue;
+            
         }
 
         if (escolha == 1) {
@@ -50,11 +57,13 @@ int main() {
 
             printf("O resistor tem 4 ou 5 cores? ");
             deu_certo = scanf("%d", &numero_de_faixas);
+            
 
             if (deu_certo != 1 || (numero_de_faixas != 4 && numero_de_faixas != 5)) {
                 printf("Número de faixas inválido!\n");
-                while (getchar() != '\n'); // Limpa o buffer de entrada
+                while (getchar() != '\n'); 
                 continue;
+                
             }
 
             resistor.quantidade_de_cores = numero_de_faixas;
@@ -63,6 +72,7 @@ int main() {
                 char cor[10];
                 printf("Digite a cor da faixa %d: ", i + 1);
                 deu_certo = scanf("%9s", cor);
+               
 
                 if (strcmp(cor, "preto") == 0) resistor.cores[i] = preto;
                 else if (strcmp(cor, "marrom") == 0) resistor.cores[i] = marrom;
@@ -104,10 +114,11 @@ int main() {
             printf("Resistência máxima: %.2f ohms\n", resistor.resistencia_maxima);
             printf("Resistência mínima: %.2f ohms\n", resistor.resistencia_minima);
             printf("Pressione Enter para continuar...");
-            while (getchar() != '\n'); // Aguarda o usuário pressionar Enter
+            while (getchar() != '\n'); 
             getchar();
         } else if (escolha != 2) {
             printf("Opção inválida! Tente novamente.\n");
+            
         }
 
     } while (escolha != 2);
